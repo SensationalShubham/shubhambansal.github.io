@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>SIMNO(Simple Notes taking Project)</title>
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-0evHe/X+R7YkIZDRvuzKMRqM+OrBnVFBL6DOitfPri4tjfHxaWutUpFmBp4vmVor"
+      crossorigin="anonymous"
+    />
+    <style>
+      body {
+        background-color: #e3f2fd;
+        /* background-color: #b8ddf8; */
+      }
+      .border {
+        border: 5px solid black;
+      }
+    </style>
+  </head>
+  <body>
+    <nav
+      class="navbar navbar-expand-lg navbar-dark bg-dark"
+      style="background-color: #b8ddf8"
+    >
+      <div class="container-fluid">
+        <a class="navbar-brand" href="#">SIMNO</a>
+        <button
+          class="navbar-toggler"
+          type="button"
+          data-bs-toggle="collapse"
+          data-bs-target="#navbarSupportedContent"
+          aria-controls="navbarSupportedContent"
+          aria-expanded="false"
+          aria-label="Toggle navigation"
+        >
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarSupportedContent">
+          <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+            <li class="nav-item">
+              <a class="nav-link active" aria-current="page" href="#">Home</a>
+            </li>
+            <!-- <li class="nav-item">
+                <a class="nav-link" href="#">Link</a>
+              </li> -->
+          </ul>
+          <form class="d-flex" role="search">
+            <input
+              class="form-control me-2"
+              id = "searchTxt"
+              placeholder="Search"
+              aria-label="Search"
+            />
+            <button class="btn btn-outline-success" type="submit">
+              Search
+            </button>
+          </form>
+        </div>
+      </div>
+    </nav>
+    <br />
+    <div class="container">
+      <h2 class="">
+        Hello Friemds!!! Don't be scared, SIMNO is just a simple notes taking
+        Tool. 😅
+      </h2>
+      <hr />
+      <br />
+      <div class="border border-3 border-dark p-3 rounded">
+        <div class="mb-3">
+          <!-- <label for="exampleFormControlInput1" class="form-label">Title</label> -->
+          <!-- <input
+            type="email"
+            class="form-control"
+            placeholder="Title for the Note"
+            id="titleTxt"
+          /> -->
+        </div>
+        <div class="mb-3">
+          <label for="exampleFormControlTextarea1" class="form-label"
+            >Write the Note below 👇</label
+          >
+          <textarea class="form-control"
+            id="addTxt"
+            rows="3"
+          ></textarea>
+        </div>
+        <button type="button" class="btn btn-primary" id="addBtn">Submit</button>
+      </div>
+      <br />
+      <h3>Your Notes </h3>
+      <div id="notes" class="row row-cols-1 row-cols-md-3 g-4">
+        <!-- <div class="col">
+          <div class="card border-primary mb-3 m-1" style="max-width: 18rem">
+            <div class="card-header">Title</div>
+            <div class="card-body text-primary">
+              <p class="card-text">
+                Some quick example text to build on the card title and make up
+                the bulk of the card's content.
+              </p>
+              <button type="button" class="btn btn-danger">Delete</button>
+            </div>
+          </div>
+        </div> -->
+      </div>
+    </div>
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-pprn3073KE6tl6bjs2QrFaJGz5/SUsLqktiwsUTF55Jfv3qYSDhgCecCxMW52nD2"
+      crossorigin="anonymous"
+    ></script>
+    <script src="index.js"></script>
+  </body>
+</html>
